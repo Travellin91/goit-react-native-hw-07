@@ -21,7 +21,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.travellin.goitreactnativehw06"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -32,7 +37,6 @@
         {
           "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
         }
-        
       ],
       [
         "expo-image-picker",
@@ -40,6 +44,11 @@
           "photosPermission": "The app accesses your photos to let you share them with your friends."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "936ae341-42d6-4695-9eaf-6515e833b388"
+      }
+    }
   }
 }
